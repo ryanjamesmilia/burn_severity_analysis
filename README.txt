@@ -19,6 +19,7 @@ Burn Ratio (NBR) calculations were taken from the United Nations website.
 ###################################################################################################
 
 Instructions:
+	1. Download data folder from releases.
 	1. Update file paths as required.
 	2. Run all scripts in numerical order.
 
