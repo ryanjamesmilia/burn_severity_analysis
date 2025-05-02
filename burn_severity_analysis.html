@@ -55,14 +55,6 @@
       analysis, and visualization.
     </p>
 
-        <div class="image-container">
-          <img src="assets/burn_severity_area_graph.png" alt="Burn Severity Area Graph" />
-          <img src="assets/burn_severity_histogram.png" alt="Burn Severity Histogram" />
-          <img src="assets/burn_severity_boxplot.png" alt="Burn Severity Boxplot" />
-        </div>
-
-    <img src="assets/burn_severity_map.png" alt="Burn severity map" />
-
     <h2>Script 1</h2>
     <pre><code class="language-python">
       """Burn Severity"""
@@ -192,9 +184,7 @@
       
       print("Burn severity map saved as 'burn_severity.tif'")
     </code></pre>
-
-    <img src="assets/burn_severity.tif" alt="Burn Severity Map" />
-
+    
     <h2>Script 2</h2>
     <pre><code class="language-python">
       """Masking Water"""
@@ -290,9 +280,7 @@ if __name__ == '__main__':
 
     print(f"Masked burn severity map saved to {output_filename}")
     </code></pre>
-
-    <img src="assets/masked_burn_severity.tif" alt="Masked Burn Severity" />
-
+    
     <h2>Script 3</h2>
     <pre><code class="language-python">
       """Area Calculation"""
@@ -411,13 +399,9 @@ plt.savefig(r'C:\Users\ryanj\Desktop\COGS\code\portfolio\burn_severity_analysis\
 print("Graphs have been saved as burn_severity_area_graph.png, burn_severity_histogram.png, and burn_severity_boxplot.png")
     </code></pre>
 
-    <img src="assets/burn_severity_area_graph.png" alt="Burn Severity Area Graph" />
-    <img src="assets/burn_severity_histogram.png" alt="Burn Severity Histogram" />
-    <img src="assets/burn_severity_boxplot.png" alt="Burn Severity Boxplot" />
-
     <section id="arcgis-mapping">
       <h2>Mapping in ArcGIS Pro</h2>
-      <p>This section outlines the process of creating a burn severity map in ArcGIS Pro. I used the <code>masked_burn_severity.tif</code> raster file exported from my second Python script.</p>
+      <p>This section outlines the process of creating a burn severity map in ArcGIS Pro. I used the masked_burn_severity.tif raster file exported from my second Python script.</p>
     
       <p>This image shows the unclassified raster file:</p>
       <img src="assets/unclassified_masked_burn_severity.png" alt="Unclassified Burn Severity Raster" style="max-width: 100%; height: auto; border: 1px solid #ccc;">
@@ -429,7 +413,7 @@ print("Graphs have been saved as burn_severity_area_graph.png, burn_severity_his
       <img src="assets/final_map.png" alt="Final Classified Burn Severity Map" style="max-width: 100%; height: auto; border: 1px solid #ccc;">
     
       <h3>Summary</h3>
-      <p>Using ArcGIS Pro, I visualized the burn severity across the study area by classifying the masked dNBR raster (<code>masked_burn_severity.tif</code>). 
+      <p>Using ArcGIS Pro, I visualized the burn severity across the study area by classifying the masked dNBR raster masked_burn_severity.tif. 
         I applied the USGS burn severity classification scheme to convert continuous dNBR values into categorical severity classes. This approach highlights 
         the spatial distribution of fire impact, resulting in a burn severity map that supports further analysis and reporting.</p>
     </section>
