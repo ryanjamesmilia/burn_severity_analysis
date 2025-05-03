@@ -44,12 +44,10 @@
     </p>
 
     <h2>Script 1</h2>
-    <pre><code class="language-python">"""Burn Severity"""
+    <pre><code class="language-python">
+""Burn Severity"""
 
-__author__ = "Ryan Milia"
-
-""" Date: March 06, 2025
-    Description:
+""" Description:
     This module prints a burn severity map based on Sentinel-2 imagery.
     - Downloads Sentinel-2 imagery for the specified time and geography.
     - Resamples SWIR bands from 20m to 10m resolution.
@@ -151,12 +149,10 @@ print("Burn severity map saved as 'burn_severity.tif'")
 </code></pre>
 
     <h2>Script 2</h2>
-    <pre><code class="language-python">"""Masking Water"""
+    <pre><code class="language-python">
+"""Masking Water"""
 
-__author__ = "Ryan Milia"
-
-""" Date: March 06, 2025
-    Description:
+""" Description:
     This module masks water from the Landsat-2 derived burn severity map.
     - Opens the GeoNOVA dataset.
     - Applies a mask to the existing burn severity map.
@@ -217,10 +213,7 @@ if __name__ == '__main__':
 <pre><code class="language-python">
 """Area Calculation"""
 
-__author__ = "Ryan Milia"
-
-""" Date: March 06, 2025
-    Description:
+""" Description:
     This module calculates the area (Ha) of burn severity levels.
     - Opens the preprocessed masked burn severity map.
     - Defines severity ranges based on burn severity levels.
