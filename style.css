@@ -20,9 +20,20 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-h1, h2, h3 {
+h1 {
   color: #2E7D32; /* Forest green for headings */
   text-align: center;
+}
+
+h2, h3 {
+  color: #2E7D32; /* Forest green for headings */
+  text-align: left;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.8em;
+  text-align: justify;
 }
 
 p {
