@@ -36,12 +36,6 @@ p {
   text-align: justify;
 }
 
-p {
-  font-size: 1.1em;
-  line-height: 1.8em;
-  text-align: justify;
-}
-
 a {
   color: #689F38; /* Lime green for links */
   text-decoration: none;
@@ -126,7 +120,7 @@ pre, code {
   overflow-x: auto;
   white-space: pre-wrap;
   word-wrap: break-word;
-  font-size: 10pt !important; /* Force smaller font size for code */
+  font-size: 10pt !important;
   line-height: 1.4;
 }
 
@@ -173,11 +167,10 @@ code {
 /* Mobile devices (landscape) */
 @media (max-width: 768px) {
   body {
-    /* Ensure background image is retained on mobile */
-    background-image: url('assets/background.jpg');
-    background-size: cover;
-    background-attachment: fixed;
+    background-size: contain;
+    background-attachment: scroll;
     background-position: center;
+    background-repeat: no-repeat;
   }
   
   .container {
@@ -220,6 +213,13 @@ code {
 
 /* Mobile devices (portrait) */
 @media (max-width: 480px) {
+  body {
+    background-size: contain;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
   .container {
     width: 94%;
     padding: 1rem;
@@ -242,7 +242,7 @@ code {
   p {
     font-size: 0.95em;
     line-height: 1.5em;
-    text-align: left; /* Switch from justify to left alignment on small screens */
+    text-align: left;
   }
   
   pre, code {
